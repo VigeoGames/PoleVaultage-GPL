@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<app title="Pole Vaultage" file="pole-vaultage" main="Main" package="pl.vigeo.game.polevaultage" version="1.0.0"
+        company="Vigeo Games" />
+	<window width="800" height="480" fps="60" orientation="landscape" resizable="false" if="target_flash" />
+	<window width="0" height="0" fps="31" orientation="landscape" fullscreen="true" hardware="true" unless="target_flash" />
+ 	
+	<set name="BUILD_DIR" value="bin" />
+
+	<haxelib name="nme" />
+	<haxelib name="nape" />
+	
+	<ndll name="std" />
+	<ndll name="regexp" />
+	<ndll name="zlib" />
+	<ndll name="nme" haxelib="nme" />
+	
+	<classpath name="src/main/haxe" />
+	
+	<assets path="src/main/resources/haxeflixel" rename="assets" include="*" exclude="*.svg|*.mp3" unless="target_flash" />
+    <assets path="src/main/resources/haxeflixel" rename="assets" include="*" exclude="*.svg|*.wav|*.ogg" if="target_flash" />
+
+    <assets path="src/main/resources/pole-vaultage/fonts" rename="pole-vaultage-assets-fonts" include="*.ttf" />
+    <assets path="src/main/resources/pole-vaultage/img" rename="pole-vaultage-assets-img" include="*" />
+	<assets path="src/main/resources/pole-vaultage/music" rename="pole-vaultage-assets-music" include="*">
+        <sound path="lightsoda-97-lolofi.mp3" id="GameTheme" />
+    </assets>
+	<assets path="src/main/resources/pole-vaultage/snd" rename="pole-vaultage-assets-sound" include="*">
+        <sound path="zap.mp3" id="zap" />
+        <sound path="ground-hit.mp3" id="ground-hit" />
+        <sound path="wood-break.mp3" id="wood-break" />
+        <sound path="applause.mp3" id="applause" />
+    </assets>
+	
+	<assets path="src/main/resources/vigeologo/img" rename="vigeologo-assets-img" include="*" />
+	<assets path="src/main/resources/vigeologo/snd" rename="vigeologo-assets-sound" include="*" exclude="*.wav" if="target_flash">
+        <sound path="vigeo-theme.mp3" id="VigeoTheme" />
+    </assets>
+</project>
