@@ -1,7 +1,7 @@
 Pole Vaultage! for TIGSource Sports Compo (GPL)
 ===============================================
 
-This is a GPL licensed source code of Pole Vaultage!, a game created for [TIGSource Sports Compo](http://forums.tigsource.com/index.php?board=52.0).
+This is a GPL licensed source code of [Pole Vaultage!](http://vigeogam.es/pole-vaultage-tigcompo/), a game created for [TIGSource Sports Compo](http://forums.tigsource.com/index.php?board=52.0).
 
 The game is written in Haxe 2.10 and uses following libraries:
 
